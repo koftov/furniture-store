@@ -57,7 +57,7 @@ function Header({ user }) {
               </Menu.Item>
             </Link>
 
-            <Menu.Item onClick={handleLogout} header right>
+            <Menu.Item onClick={handleLogout} header position="right">
               <Icon name="sign out" size="large" />
               <span>Logout</span>
             </Menu.Item>

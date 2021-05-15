@@ -28,14 +28,14 @@ function Header({ user }) {
               src="/static/logo.svg"
               style={{ marginRight: '1em' }}
             />
-            Koftov Store
+            <span>Koftov Store</span>
           </Menu.Item>
         </Link>
 
         <Link href="/cart">
           <Menu.Item header active={isActive('/cart')}>
             <Icon name="cart" size="large" />
-            Cart
+            <span>Cart</span>
           </Menu.Item>
         </Link>
 
@@ -43,7 +43,7 @@ function Header({ user }) {
           <Link href="/create">
             <Menu.Item header active={isActive('/create')}>
               <Icon name="add square" size="large" />
-              Create
+              <span>Create</span>
             </Menu.Item>
           </Link>
         )}
@@ -53,13 +53,13 @@ function Header({ user }) {
             <Link href="/account">
               <Menu.Item header active={isActive('/account')}>
                 <Icon name="user" size="large" />
-                Account
+                <span>Account</span>
               </Menu.Item>
             </Link>
 
             <Menu.Item onClick={handleLogout} header>
               <Icon name="sign out" size="large" />
-              Logout
+              <span>Logout</span>
             </Menu.Item>
           </>
         ) : (
@@ -67,14 +67,14 @@ function Header({ user }) {
             <Link href="/login">
               <Menu.Item header active={isActive('/login')}>
                 <Icon name="sign in" size="large" />
-                Login
+                <span>Login</span>
               </Menu.Item>
             </Link>
 
             <Link href="/signup">
               <Menu.Item header active={isActive('/signup')}>
                 <Icon name="signup" size="large" />
-                Signup
+                <span>Signup</span>
               </Menu.Item>
             </Link>
           </>

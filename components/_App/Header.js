@@ -19,7 +19,7 @@ function Header({ user }) {
   }
 
   return (
-    <Menu stackable fluid inverted>
+    <Menu fluid inverted>
       <Container text>
         <Link href="/">
           <Menu.Item header active={isActive('/')}>
@@ -28,7 +28,7 @@ function Header({ user }) {
               src="/static/logo.svg"
               style={{ marginRight: '1em' }}
             />
-            <span>Koftov Store</span>
+            <span>Store</span>
           </Menu.Item>
         </Link>
 
@@ -57,7 +57,7 @@ function Header({ user }) {
               </Menu.Item>
             </Link>
 
-            <Menu.Item onClick={handleLogout} header>
+            <Menu.Item onClick={handleLogout} header right>
               <Icon name="sign out" size="large" />
               <span>Logout</span>
             </Menu.Item>

@@ -17,3 +17,13 @@ body {
   margin: 0;
   padding: 0.5em 1em 0.75em !important;
 }
+
+.header.item span {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .header.item span {
+    display: inline-block;
+  }
+}

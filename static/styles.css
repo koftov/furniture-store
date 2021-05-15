@@ -22,8 +22,16 @@ body {
   display: none;
 }
 
+.menu .container {
+  justify-content: space-between;
+}
+
 @media (min-width: 1000px) {
   .header.item span {
     display: inline-block;
+  }
+  
+  .menu .container {
+    justify-content: unset;
   }
 }

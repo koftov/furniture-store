@@ -70,7 +70,7 @@ function AccountOrders({ orders }) {
             No past orders.
           </Header>
           <div>
-            <Button onClick={() => router.push('/')} color="orange">
+            <Button onClick={() => router.push('/')} color="black">
               View Products
             </Button>
           </div>

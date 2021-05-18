@@ -3,7 +3,7 @@ import formatDate from '../../utils/formatDate';
 
 function AccountHeader({ role, email, name, createdAt }) {
   return (
-    <Segment secondary inverted color="violet">
+    <Segment secondary inverted color="black">
       <Label
         color="teal"
         size="large"

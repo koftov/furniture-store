@@ -1,6 +1,6 @@
 const baseUrl =
   process.env.NODE_ENV === 'production'
-    ? 'https://bike-store.vercel.app'
+    ? process.env.BASE_URL
     : 'http://localhost:3000';
 
 export default baseUrl;
